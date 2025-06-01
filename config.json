@@ -1,0 +1,31 @@
+{
+    "cookies": {
+        "ssw_dom": "RDM",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDg3MTE5MDksInB4eSI6IjE3Mi4zMS43Ny4zIiwic3ViIjogInJpY2FyZG9zIn0.QefQ7YdVnySY2jIDToKZjsZzWbxRPZvmrPRa0Weo-z0",
+        "login": "ricardos",
+        "chave": "1794NFGCYY",
+        "sigla_emp": "RDM",
+        "useri": "85842671581",
+        "remember": "1"
+    },
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Connection": "keep-alive",
+        "Content-type": "application/x-www-form-urlencoded",
+        "Origin": "https://sistema.ssw.inf.br",
+        "Referer": "https://sistema.ssw.inf.br/bin/ssw0053",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "last_token_retrieval": "2025-05-30 15:18:35",
+    "token_info": {
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDg3MTE5MDksInB4eSI6IjE3Mi4zMS43Ny4zIiwic3ViIjogInJpY2FyZG9zIn0.QefQ7YdVnySY2jIDToKZjsZzWbxRPZvmrPRa0Weo-z0",
+        "retrieved_at": "2025-05-30 15:18:35"
+    }
+}

@@ -1,0 +1,320 @@
+/* Base Theme - Futuristic Cyberpunk */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+body, .stApp {
+    background-color: #0A0E17;
+    color: #e0e0e0;
+    font-family: 'Rajdhani', sans-serif;
+    background-image: 
+        radial-gradient(circle at 20% 35%, rgba(0, 183, 235, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 75% 15%, rgba(255, 0, 255, 0.05) 0%, transparent 50%);
+}
+
+.stSidebar {
+    background-color: rgba(16, 21, 34, 0.8);
+    border-right: 1px solid rgba(0, 183, 235, 0.2);
+    box-shadow: 0 0 20px rgba(0, 183, 235, 0.2);
+}
+
+/* Buttons and Interactive Elements */
+.stButton>button {
+    background: linear-gradient(135deg, rgba(12, 25, 43, 0.9) 0%, rgba(16, 31, 63, 0.9) 100%);
+    color: #00b7eb;
+    border: 1px solid #00b7eb;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 183, 235, 0.8);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(5px);
+}
+
+.stButton>button:hover {
+    background: linear-gradient(135deg, rgba(0, 183, 235, 0.2) 0%, rgba(0, 183, 235, 0.1) 100%);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 183, 235, 0.8), inset 0 0 10px rgba(0, 183, 235, 0.4);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.stSelectbox, .stMultiSelect, .stDateInput {
+    background-color: rgba(16, 21, 34, 0.7);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 183, 235, 0.4);
+}
+
+.stSelectbox:hover, .stMultiSelect:hover, .stDateInput:hover {
+    border: 1px solid rgba(0, 183, 235, 0.8);
+    box-shadow: 0 0 10px rgba(0, 183, 235, 0.3);
+}
+
+.stSelectbox div, .stMultiSelect div, .stDateInput div {
+    color: #e0e0e0;
+    text-shadow: 0 0 2px rgba(0, 183, 235, 0.5);
+}
+
+/* Typography */
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(0, 183, 235, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 183, 235, 0), rgba(0, 183, 235, 1), rgba(0, 183, 235, 0));
+}
+
+h2, h3 {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 15px rgba(0, 183, 235, 0.3);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+h2::before, h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(180deg, rgba(0, 183, 235, 0.8), rgba(0, 183, 235, 0.1));
+    border-radius: 2px;
+}
+
+/* Metrics Cards */
+.metrics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.metric-card {
+    background: linear-gradient(135deg, rgba(16, 21, 34, 0.8) 0%, rgba(10, 14, 23, 0.9) 100%);
+    border: 1px solid rgba(0, 183, 235, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 183, 235, 0), rgba(0, 183, 235, 1), rgba(0, 183, 235, 0));
+}
+
+.metric-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 183, 235, 0.3);
+    transform: translateY(-3px);
+}
+
+.metric-title {
+    font-size: 0.9em;
+    color: rgba(224, 224, 224, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+.metric-value {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 183, 235, 0.8);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* DataFrames */
+.stDataFrame {
+    background-color: rgba(16, 21, 34, 0.7);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 183, 235, 0.3);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.stDataFrame:hover {
+    border: 1px solid rgba(0, 183, 235, 0.6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 183, 235, 0.2);
+}
+
+.stDataFrame table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stDataFrame th {
+    background-color: rgba(10, 14, 23, 0.95);
+    color: #ffffff;
+    padding: 12px 15px;
+    border-bottom: 2px solid rgba(0, 183, 235, 0.4);
+    text-shadow: 0 0 5px rgba(0, 183, 235, 0.5);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.stDataFrame td {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(224, 224, 224, 0.1);
+    color: rgba(224, 224, 224, 0.9);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95em;
+}
+
+.stDataFrame tr:nth-of-type(even) {
+    background-color: rgba(16, 21, 34, 0.4);
+}
+
+.stDataFrame tr:hover {
+    background-color: rgba(0, 183, 235, 0.05);
+}
+
+/* Toggle Switch */
+.css-1djdyxw {
+    color: rgba(0, 183, 235, 0.8) !important;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    background: linear-gradient(135deg, rgba(16, 21, 34, 0.9) 0%, rgba(10, 14, 23, 0.95) 100%);
+    padding: 15px;
+    margin: -15px -15px 15px -15px;
+    border-bottom: 1px solid rgba(0, 183, 235, 0.3);
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 183, 235, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Page Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.main-content {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Special Text Effect for Title */
+.title-container {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 183, 235, 0.5);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    color: rgba(224, 224, 224, 0.8);
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.title-separator {
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 183, 235, 0), rgba(0, 183, 235, 0.8), rgba(0, 183, 235, 0));
+    margin: 10px auto 20px auto;
+}
+
+/* Value Highlights */
+.positive-value {
+    color: #00dfc0 !important;
+    text-shadow: 0 0 5px rgba(0, 223, 192, 0.5) !important;
+}
+
+.negative-value {
+    color: #ff4d9e !important;
+    text-shadow: 0 0 5px rgba(255, 77, 158, 0.5) !important;
+}
+
+/* Section Headers */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.section-header-line {
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 183, 235, 0.8), rgba(0, 183, 235, 0.1));
+    margin-left: 15px;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(0, 183, 235, 0.5);
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+    color: rgba(224, 224, 224, 0.6);
+    border-top: 1px solid rgba(0, 183, 235, 0.2);
+}
